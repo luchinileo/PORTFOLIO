@@ -1,0 +1,32 @@
+{"proyectos":[
+    {    "id":"1",
+        "image":"",
+        "title":"piedraPapelTijera",
+        "description":"Es el clasico juego de piedra papel y tijera hecho con react",
+        "url":"Proyecto 1",
+        "url_demo":"Proyecto 1"
+    },
+    {    "id":"2",
+        "image":"",
+        "title":"SemaforReact",
+        "description":"Es una simulacion de un semaforo hecho con react",
+        "url":"Proyecto 2",
+        "url_demo":"Proyecto 2"
+    },
+    {    "id":"3",
+        "image":"",
+        "title":"ReactCalculadora",
+        "description":"Es una calculadora para realizar las cuentas bacicas se utilizo react ",
+        "url":"Proyecto 3",
+        "url_demo":"Proyecto 3"
+    },
+    {    "id":"4",
+        "image":"",
+        "title":"concesionario2023 ",
+        "description":"Es un consesonario con sucursales",
+        "url":"Proyecto 4",
+        "url_demo":"Proyecto 4"
+    }
+    
+    
+]}
