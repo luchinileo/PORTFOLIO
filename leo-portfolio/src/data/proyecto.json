@@ -1,32 +1,53 @@
 {"proyectos":[
     {    "id":"1",
-        "image":"",
-        "title":"piedraPapelTijera",
-        "description":"Es el clasico juego de piedra papel y tijera hecho con react",
-        "url":"Proyecto 1",
-        "url_demo":"Proyecto 1"
+        "image":"https://img.freepik.com/vector-gratis/manos-simbolo-puno-victoria_107791-8324.jpg?w=900&t=st=1693257440~exp=1693258040~hmac=eb42fd58c5f07c0b9100b5b3488cebb",
+        "title":" Piedra Papel o Tijera " ,
+        "description":" Es el clasico juego de piedra papel y tijera hecho con react",
+        "url":"https://github.com/luchinileo/juegoReactPiedraPapelTijera",
+        "url_demo":" Proyecto 1"
     },
     {    "id":"2",
-        "image":"",
-        "title":"SemaforReact",
-        "description":"Es una simulacion de un semaforo hecho con react",
-        "url":"Proyecto 2",
-        "url_demo":"Proyecto 2"
+        "image":"https://img.freepik.com/vector-gratis/conjunto-semaforos-aislado_1284-42360.jpg?w=740&t=st=1693257739~exp=1693258339~hmac=aefddf6fdfc3d50a4f9bca6132a8e77f9b84990199355b94763b3b39509cc171",
+        "title":"Semafor con React",
+        "description":" Es una simulacion de un semaforo hecho con react",
+        "url":"https://github.com/luchinileo/SemaforReact",
+        "url_demo":" Proyecto 2"
     },
     {    "id":"3",
-        "image":"",
-        "title":"ReactCalculadora",
-        "description":"Es una calculadora para realizar las cuentas bacicas se utilizo react ",
-        "url":"Proyecto 3",
-        "url_demo":"Proyecto 3"
+        "image":"https://img.freepik.com/vector-gratis/diseno-etiqueta-calculadora-aislada_1308-60994.jpg?w=740&t=st=1693259231~exp=1693259831~hmac=3f6a2a60c3b15b05c7695ef4831bf19a287c58e236cb9cdae956f9884acfe35a",
+        "title":" ReactCalculadora",
+        "description":" Es una calculadora para realizar las cuentas bacicas se utilizo react ",
+        "url":" https://github.com/luchinileo/ReactCalculadora",
+        "url_demo":" Proyecto 3"
     },
     {    "id":"4",
-        "image":"",
-        "title":"concesionario2023 ",
-        "description":"Es un consesonario con sucursales",
-        "url":"Proyecto 4",
-        "url_demo":"Proyecto 4"
+        "image":"https://img.freepik.com/vector-premium/vendedor-hombre-automoviles-concesionario-centro-showroom-interior-sobre-conjunto-nuevos-vehiculos-modernos_48369-17685.jpg?w=1060",
+        "title":" concesionario2023 ",
+        "description":" Es un consesonario con sucursales",
+        "url":" https://github.com/luchinileo/ReactCalculadora",
+        "url_demo":" Proyecto 4"
+    },
+    {    "id":"5",
+    "image":"https://img.freepik.com/vector-gratis/concepto-guion-grafico_23-2148697880.jpg?w=740&t=st=1693259612~exp=1693260212~hmac=697f549d110478797fe1f7081fe248c6bbfc439a9d54bcbc9baa29fa33dd4ad1",
+    "title":" portfolio ",
+    "description":" portfolio",
+    "url":" Proyecto 5",
+    "url_demo":" Proyecto 5"
+    }, 
+    {    "id":"6",
+    "image":"https://img.freepik.com/vector-gratis/sala-exposicion-automoviles-concesionario-automoviles-nuevos-sala-grande-hall-escaparate-vitrina-cristal_33099-911.jpg?w=900&t=st=1693266974~exp=1693267574~hmac=b106eb09aba53557f5a38ffb79db478036e71d3d1302d0209e16ed77c6d7b8b8",
+    "title":"concesionario2023 ",
+    "description":"Es un consesonario con sucursales",
+    "url":"https://github.com/luchinileo/PORTFOLIO",
+    "url_demo":"Proyecto 6"
+    },
+    {
+    "id":"7",
+    "image":"https://img.freepik.com/vector-gratis/manos-composicion-plana-dinero-lugar-trabajo-billetera-billetes-calculadora-tarjetas-credito-e-ilustracion-vector-efectivo_1284-80351.jpg?w=740&t=st=1693267178~exp=1693267778~hmac=6db269ce40e5bbdc3756808de048e898dfd05bce8879451ecd44e0eabcfa8769",
+    "title":"APP Back-End ",
+    "description":"Es una APP que te permite crear clientes,facturas,productos y trabajar con la base de datos ",
+    "url":"https://github.com/luchinileo/API-BACKEND-FACTURACION.git",
+    "url_demo":"Proyecto 7"
     }
-    
     
 ]}

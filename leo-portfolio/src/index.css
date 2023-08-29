@@ -1,24 +1,88 @@
 html{
   font-family: 'Roboto', sans-serif;
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(235,229,228,0.8379726890756303) 3%);
 
 }
+body{
+  margin: 0px; 
+} 
 .box_porfolio{
   border: 2px solid tomato;
   border-radius: 10px;
   padding-right: 20px;
+  border-left: 20px;
+  padding-left: 20px;
+ 
 }
 .containerprincipal{
-  background-image: url(https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80); 
-  height: 100vh;
+  background-image: url(https://img.freepik.com/fotos-premium/foto-espacio-trabajo-computadora-minimalista-monitor-computadora-portatil_933496-26546.jpg?w=1480); 
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-
+ 
+   padding-left: 15px; 
+  color: white;
+  height: 100vh;
+  /* width: 100%; */
+  
 }
 .containerAcercaDe{
-  background-image: url();
+ padding-left: 15px; 
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
+  /* width: 100%; */
+  /* background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(177,135,143,1) 100%); */
+ 
 }
+.icon{
+  transition: .6s all ease-in-out;
+  margin-right: 40px;
+  margin-bottom: 20px;
+}
+.icon:hover{
+  transform: scale(1.1);
+}
+.footer{
+    position: fixed;  
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    
+}
+.tarjeta{
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 20%;
+    left: 40%;
+  }  
+  .img{
+    background-image: url(https://avatars.githubusercontent.com/u/104324324?v=4);
+  }
+  .contacto{
+    background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(177,135,143,1) 100%);
+  }
+.css-46bh2p-MuiCardContent-root {
+    padding: 16px;
+    background-color: #a4b37180;
+   
+}
+
+   
+    
+   
+    
+   
+    
+    
+
+   
+   
+       
+    
+   
+        
+       

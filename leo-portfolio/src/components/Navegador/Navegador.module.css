@@ -9,3 +9,9 @@
 .link:last-child{
  padding-right: 20px;
 }
+.navegador{
+    display:'flex';
+    justify-Content:'center';
+    align-Items:'center';
+}
+  
