@@ -2,7 +2,6 @@ html{
   font-family: 'Roboto', sans-serif;
   background: rgb(238,174,202);
   background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(235,229,228,0.8379726890756303) 3%);
-
 }
 body{
   margin: 0px; 
@@ -23,7 +22,7 @@ body{
    padding-left: 15px; 
   color: white;
   height: 100vh;
-  /* width: 100%; */
+  
   
 }
 .containerAcercaDe{
@@ -74,7 +73,10 @@ background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(177,135,143,1) 10
   font-size: 25px;
 }
     
-   
+.acercade{
+  padding-left: 20px;
+
+}
     
    
     

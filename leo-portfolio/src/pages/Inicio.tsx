@@ -6,7 +6,7 @@ export const Inicio = () => {
   return (
     <div className='containerprincipal'> 
    <Navegador/>
-   <div> Programador Junior</div>
+   <div> Desarrollador Web Full Stack</div>
    <Footer/>
     </div>
   )
