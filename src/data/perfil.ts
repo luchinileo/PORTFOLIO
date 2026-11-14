@@ -36,7 +36,7 @@ export interface GrupoHabilidades {
 export const perfil = {
   nombre: 'Leonardo Luchini',
   rol: 'Desarrollador Web Full Stack Junior',
-  ubicacion: 'Ushuaia, Argentina · disponible remoto',
+  ubicacion: 'Puerto Madryn, Chubut, Argentina · disponible remoto',
   bajada:
     'Construyo interfaces con React y TypeScript, escribo tests y trabajo con ramas, pull requests y code review.',
   avatar: 'https://avatars.githubusercontent.com/u/104324324?v=4',
