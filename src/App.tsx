@@ -1,32 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { Inicio } from './pages/Inicio'
-import { Portfolio } from './pages/Portfolio'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import { AcercaDe } from './pages/AcercaDe'
-import { Contacto } from './pages/Contacto'
-import { Error } from './pages/Error'
+import { Header } from './components/Header'
+import { Hero } from './components/Hero'
+import { SobreMi } from './components/SobreMi'
+import { ExperienciaSeccion } from './components/Experiencia'
+import { Proyectos } from './components/Proyectos'
+import { Habilidades } from './components/Habilidades'
+import { Contacto } from './components/Contacto'
+import { Footer } from './components/Footer'
 
 function App() {
   return (
-    <BrowserRouter>
-    <Routes>
-      <Route index element={<Inicio/>}/>
-      <Route path="/acercade" element={<AcercaDe/>}/>
-      <Route path="/portfolio" element={<Portfolio/>}/>
-      <Route path="/contacto" element={<Contacto/>}/>
-      <Route path="*" element={<Error/>}/>
-    </Routes>
-    </BrowserRouter>
-    )
-  }
-  
-  export default App
- 
+    <>
+      <a className="saltar" href="#contenido">
+        Saltar al contenido
+      </a>
+      <Header />
+      <main id="contenido">
+        <Hero />
+        <SobreMi />
+        <ExperienciaSeccion />
+        <Proyectos />
+        <Habilidades />
+        <Contacto />
+      </main>
+      <Footer />
+    </>
+  )
+}
 
-
-  
-
-
+export default App
