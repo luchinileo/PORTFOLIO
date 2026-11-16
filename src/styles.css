@@ -1,0 +1,435 @@
+/* ==========================================================
+   Variables de diseño: colores, espaciado y tipografía.
+   El modo oscuro solo redefine los colores.
+   ========================================================== */
+:root {
+  --fondo: #f7f8fa;
+  --superficie: #ffffff;
+  --texto: #1b1f24;
+  --texto-suave: #4d5560;
+  --borde: #dde1e6;
+  --acento: #0b6bcb;
+  --acento-texto: #ffffff;
+  --acento-suave: #e6f0fb;
+
+  --radio: 12px;
+  --ancho-max: 1040px;
+  --altura-header: 64px;
+  --fuente: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+  color-scheme: light;
+}
+
+:root[data-tema='oscuro'] {
+  --fondo: #0f1318;
+  --superficie: #171c23;
+  --texto: #e8ebef;
+  --texto-suave: #a7b0bb;
+  --borde: #2a313b;
+  --acento: #5aa9f5;
+  --acento-texto: #0b1622;
+  --acento-suave: #16273a;
+
+  color-scheme: dark;
+}
+
+/* ==========================================================
+   Base
+   ========================================================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--altura-header) + 16px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: var(--fuente);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  background: var(--fondo);
+  color: var(--texto);
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  margin: 0;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+a {
+  color: var(--acento);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--acento);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.contenedor {
+  width: 100%;
+  max-width: var(--ancho-max);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Enlace oculto que aparece al navegar con teclado */
+.saltar {
+  position: absolute;
+  left: 16px;
+  top: -100px;
+  z-index: 100;
+  padding: 8px 16px;
+  background: var(--acento);
+  color: var(--acento-texto);
+  border-radius: var(--radio);
+}
+
+.saltar:focus {
+  top: 12px;
+}
+
+/* ==========================================================
+   Header y navegación
+   ========================================================== */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: color-mix(in srgb, var(--fondo) 88%, transparent);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--borde);
+}
+
+.header__fila {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--altura-header);
+}
+
+.header__logo {
+  font-weight: 700;
+  color: var(--texto);
+  text-decoration: none;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header__nav ul {
+  display: flex;
+  gap: 4px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__nav a {
+  display: block;
+  padding: 8px 12px;
+  color: var(--texto-suave);
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.header__nav a:hover {
+  color: var(--texto);
+  background: var(--acento-suave);
+}
+
+.header__boton-menu {
+  display: none;
+}
+
+.boton-tema,
+.header__boton-menu {
+  font: inherit;
+  padding: 6px 12px;
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+  background: var(--superficie);
+  color: var(--texto);
+  cursor: pointer;
+}
+
+@media (max-width: 760px) {
+  .header__boton-menu {
+    display: block;
+  }
+
+  .header__nav {
+    display: none;
+    position: absolute;
+    top: var(--altura-header);
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 8px 16px 16px;
+    background: var(--fondo);
+    border-bottom: 1px solid var(--borde);
+  }
+
+  .header__nav--abierto {
+    display: flex;
+  }
+
+  .header__nav ul {
+    flex-direction: column;
+  }
+
+  .boton-tema {
+    align-self: flex-start;
+  }
+}
+
+/* ==========================================================
+   Hero
+   ========================================================== */
+.hero {
+  padding: 72px 0 56px;
+}
+
+.hero__grilla {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 48px;
+}
+
+.hero__saludo {
+  margin: 0;
+  color: var(--texto-suave);
+}
+
+.hero__nombre {
+  font-size: clamp(2.25rem, 6vw, 3.5rem);
+  letter-spacing: -0.02em;
+}
+
+.hero__rol {
+  margin: 8px 0 16px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--acento);
+}
+
+.hero__bajada {
+  max-width: 34rem;
+  color: var(--texto-suave);
+}
+
+.hero__ubicacion {
+  font-size: 0.95rem;
+  color: var(--texto-suave);
+}
+
+.avatar {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--superficie);
+  box-shadow: 0 8px 30px rgb(0 0 0 / 0.12);
+}
+
+.avatar--iniciales {
+  display: grid;
+  place-items: center;
+  font-size: 4rem;
+  font-weight: 700;
+  background: var(--acento-suave);
+  color: var(--acento);
+}
+
+@media (max-width: 760px) {
+  .hero {
+    padding-top: 40px;
+  }
+
+  .hero__grilla {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .avatar {
+    order: -1;
+    width: 128px;
+    height: 128px;
+  }
+
+  .avatar--iniciales {
+    font-size: 2.5rem;
+  }
+}
+
+/* ==========================================================
+   Secciones, tarjetas y elementos compartidos
+   ========================================================== */
+.seccion {
+  padding: 56px 0;
+  border-top: 1px solid var(--borde);
+}
+
+.seccion__titulo {
+  font-size: 1.75rem;
+  margin-bottom: 24px;
+}
+
+.texto {
+  max-width: 44rem;
+  color: var(--texto-suave);
+}
+
+.lista {
+  display: grid;
+  gap: 20px;
+}
+
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px;
+  background: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio);
+}
+
+.tarjeta p {
+  margin: 0;
+}
+
+.tarjeta__encabezado {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px 24px;
+}
+
+.tarjeta__titulo {
+  font-size: 1.2rem;
+}
+
+.tarjeta__subtitulo {
+  color: var(--acento);
+  font-weight: 600;
+}
+
+.tarjeta__periodo {
+  color: var(--texto-suave);
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.logros {
+  margin: 0;
+  padding-left: 1.25rem;
+  display: grid;
+  gap: 6px;
+}
+
+.etiquetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.etiquetas li {
+  padding: 2px 10px;
+  font-size: 0.875rem;
+  border-radius: 999px;
+  background: var(--acento-suave);
+  color: var(--texto);
+}
+
+.nota {
+  font-size: 0.9rem;
+  color: var(--texto-suave);
+  font-style: italic;
+}
+
+.mas {
+  margin-top: 24px;
+  color: var(--texto-suave);
+}
+
+/* ==========================================================
+   Botones
+   ========================================================== */
+.acciones {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.boton {
+  display: inline-block;
+  padding: 10px 18px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--texto);
+  background: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: 999px;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+  overflow-wrap: anywhere;
+}
+
+.boton:hover {
+  border-color: var(--acento);
+  transform: translateY(-1px);
+}
+
+.boton--primario {
+  color: var(--acento-texto);
+  background: var(--acento);
+  border-color: var(--acento);
+}
+
+/* ==========================================================
+   Footer
+   ========================================================== */
+.footer {
+  padding: 24px 0;
+  border-top: 1px solid var(--borde);
+  font-size: 0.9rem;
+  color: var(--texto-suave);
+}
+
+.footer p {
+  margin: 0;
+}

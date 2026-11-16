@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leonardo Luchini · Desarrollador Web Full Stack</title>
+    <meta
+      name="description"
+      content="Portfolio de Leonardo Luchini, desarrollador web full stack junior: React, TypeScript, Next.js y Node.js."
+    />
+    <meta property="og:title" content="Leonardo Luchini · Desarrollador Web Full Stack" />
+    <meta property="og:description" content="Experiencia, proyectos y contacto." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <script>
+      // Aplica el tema guardado antes de pintar la página, para evitar un parpadeo.
+      try {
+        var t = localStorage.getItem('tema')
+        if (t !== 'claro' && t !== 'oscuro') {
+          t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'oscuro' : 'claro'
+        }
+        document.documentElement.dataset.tema = t
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
