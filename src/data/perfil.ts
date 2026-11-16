@@ -75,6 +75,14 @@ export const experiencias: Experiencia[] = [
 
 export const proyectos: Proyecto[] = [
   {
+    titulo: 'Luchini Automotores — concesionaria en Ushuaia',
+    descripcion:
+      'Sitio para una concesionaria ficticia: catálogo con búsqueda, filtros y orden guardados en la URL, ficha de cada vehículo con galería, favoritos con Context y localStorage, y un formulario validado que arma la consulta por WhatsApp. Responsive y publicado con GitHub Actions.',
+    stack: ['React', 'React Router', 'Bootstrap', 'Vite', 'GitHub Actions'],
+    demo: 'https://luchinileo.github.io/Pagina-venta-de-vehiculos/',
+    codigo: 'https://github.com/luchinileo/Pagina-venta-de-vehiculos',
+  },
+  {
     titulo: 'Molienda Luchini — landing de cafetería',
     descripcion:
       'Landing page responsive para una cafetería: menú, opiniones, ubicación y formulario de reserva de mesa. Componentes separados y contenido centralizado en un archivo de datos.',
