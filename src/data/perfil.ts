@@ -85,9 +85,10 @@ export const proyectos: Proyecto[] = [
   {
     titulo: 'Molienda Luchini — landing de cafetería',
     descripcion:
-      'Landing page responsive para una cafetería: menú, opiniones, ubicación y formulario de reserva de mesa. Componentes separados y contenido centralizado en un archivo de datos.',
-    stack: ['Next.js', 'TypeScript', 'Tailwind CSS'],
-    estado: 'Demo en preparación',
+      'Landing page responsive para una cafetería: menú, opiniones, ubicación y formulario de reserva de mesa con validación accesible. Componentes separados, contenido centralizado en un archivo de datos y exportación estática publicada con GitHub Actions.',
+    stack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'GitHub Actions'],
+    demo: 'https://luchinileo.github.io/molienda-luchini-landing/',
+    codigo: 'https://github.com/luchinileo/molienda-luchini-landing',
   },
   {
     titulo: 'Este portfolio',
